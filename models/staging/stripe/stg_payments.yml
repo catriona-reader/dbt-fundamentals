@@ -1,0 +1,13 @@
+version: 2 
+
+
+models: 
+  - name: stg_payments 
+    description: cleaned payments data from stripe
+    columns: 
+      - name: payment_id 
+        description: primary key for the payments data 
+        tests: 
+          - unique 
+          - not_null
+              
